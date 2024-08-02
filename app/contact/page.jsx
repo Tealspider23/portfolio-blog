@@ -1,29 +1,29 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { useForm, ValidationError } from '@formspree/react';
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import styles from '@/components/GlassmorphicBackground.module.css';
-import { motion } from 'framer-motion';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import styles from "@/components/GlassmorphicBackground.module.css";
+import { motion } from "framer-motion";
 
 const info = [
   {
     icon: <FaPhoneAlt />,
-    title: 'Phone',
-    description: '(+91) 78489 96748',
+    title: "Phone",
+    description: "(+91) 78489 96748",
   },
   {
     icon: <FaEnvelope />,
-    title: 'Email',
-    description: 'amitkb.1323@gmail.com',
+    title: "Email",
+    description: "amitkb.1323@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt />,
-    title: 'Address',
-    description: 'Q/R - B/661 Nalconagar Angul-759145, Odisha, India',
+    title: "Address",
+    description: "Q/R - B/661 Nalconagar Angul-759145, Odisha, India",
   }
 ];
 
@@ -33,7 +33,7 @@ const Contactpage = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' } }}
+      animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
       className="py-6"
     >
       <div className="container mx-auto">
@@ -44,7 +44,7 @@ const Contactpage = () => {
               <p className="text-white text-2xl">Thanks for your message!</p>
             ) : (
               <form onSubmit={handleSubmit} className={`flex flex-col gap-6 p-10 ${styles.glassmorphic} rounded-xl`}>
-                <h3 className="text-4xl text-accent">Let's Work Together</h3>
+                <h3 className="text-4xl text-accent">Let"s Work Together</h3>
                 <p className="text-white/60">Get in touch with me</p>
                 {/* Inputs */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -98,7 +98,7 @@ const Contactpage = () => {
                   errors={state.errors}
                 />
                 <Button type="submit" disabled={state.submitting} size="md" className="max-w-40">
-                  {state.submitting ? 'Sending...' : 'Send Message'}
+                  {state.submitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             )}

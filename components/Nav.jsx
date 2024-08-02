@@ -1,24 +1,24 @@
-'use client'
+"use client"
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 const links =[
 {
-    name:'home',
-    path:'/',
+    name:"home",
+    path:"/",
 },
 {
-    name:'resume',
-    path:'/resume',
+    name:"resume",
+    path:"/resume",
 },
 {
-    name:'work',
-    path:'/work',
+    name:"work",
+    path:"/work",
 },
 {
-    name:'contact',
-    path:'/contact',
+    name:"contact",
+    path:"/contact",
 },
 ]
 

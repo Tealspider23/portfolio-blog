@@ -1,27 +1,27 @@
-'use client'
+"use client"
 
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
 import { CiMenuFries } from "react-icons/ci"
-import styles from '@/components/GlassmorphicBackground.module.css' 
+import styles from "@/components/GlassmorphicBackground.module.css" 
 
 const links =[
     {
-        name:'home',
-        path:'/',
+        name:"home",
+        path:"/",
     },
     {
-        name:'resume',
-        path:'/resume',
+        name:"resume",
+        path:"/resume",
     },
     {
-        name:'work',
-        path:'/work',
+        name:"work",
+        path:"/work",
     },
     {
-        name:'contact',
-        path:'/contact',
+        name:"contact",
+        path:"/contact",
     },
     ]
 
@@ -38,7 +38,7 @@ const MobileNav = () => {
         <SheetContent className="flex flex-col">
             {/*logo */}
             <div className="mt-32 mb-40 text-center text-2xl">
-                <Link href='/'>
+                <Link href="/">
                 <h1 className="text-4xl font-semibold">
                  Amit<span className="text-accent">.</span></h1>
                 </Link></div>

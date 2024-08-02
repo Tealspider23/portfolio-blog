@@ -1,6 +1,6 @@
-'use client'
+"use client"
 import { Button } from "@/components/ui/button"
-import {FiDownload} from 'react-icons/fi'
+import {FiDownload} from "react-icons/fi"
 import { useRef } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
@@ -12,7 +12,7 @@ import Photo from "@/components/Photo"
 import Stats from "@/components/Stats"
 import LatestBlogs from "@/components/Latestblogs"
 import Footer from "@/components/footer"
-import styles from '@/components/GlassmorphicBackground.module.css' 
+import styles from "@/components/GlassmorphicBackground.module.css" 
 
 
 
@@ -29,7 +29,7 @@ const HomePage = () => {
 
   const scrollToAbout = () => {
     if (aboutRef.current) {
-      aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+      aboutRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -43,10 +43,10 @@ const HomePage = () => {
   
       {/* Content */}
       <motion.div initial={{opacity:0}}
-       animate={{opacity:1 ,transition:{ delay:2.4 , duration:0.4 ,ease:'easeIn'}}}
+       animate={{opacity:1 ,transition:{ delay:2.4 , duration:0.4 ,ease:"easeIn"}}}
       className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-8">
         <h1 className="text-4xl font-bold mb-4">Welcome to My Portfolio </h1>
-        <p className="text-xl mb-8">Hello! I'm Amit, a software developer.</p>
+        <p className="text-xl mb-8">Hello! I"m Amit, a software developer.</p>
         <div className="flex gap-4"> {/* Flex container for buttons */}
     <Button
       href="#about"
@@ -67,7 +67,7 @@ const HomePage = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl  ">Software Developer</span>
            <h1 className="h1">
-           Hello I'm <br />
+           Hello I"m <br />
             <span className="text-accent hover-target">Amit Kumar</span>
           </h1>
             <p className="max-w-[500px] mb-9 text-white/80 ">
@@ -76,7 +76,7 @@ const HomePage = () => {
             {/*Btn and socials */}
             <div className=" flex flex-col  xl:flex-row items-center gap-8">
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
-              <Link  href={'/resume.pdf'}  target="_blank"  rel="noopener noreferrer" locale={false} download>Download CV</Link>
+              <Link  href={"/resume.pdf"}  target="_blank"  rel="noopener noreferrer" locale={false} download>Download CV</Link>
                 <FiDownload className=" text-xl  "/>
               </Button>
               <div className="mb-8 xl:mb-0">

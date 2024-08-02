@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import {motion} from "framer-motion";
 import React , { useState } from "react";
@@ -15,51 +15,51 @@ import WorkSliderbtns from "@/components/WorkSliderbtns";
 
 const projects =[
   {
-    num:'01',
-    category:'frontend',
-    title:'project 1',
-    description:'Lemillion Note Manager . This is a note taking app',
+    num:"01",
+    category:"frontend",
+    title:"project 1",
+    description:"Lemillion Note Manager . This is a note taking app",
     stack:[
-      {name:'NextJs'},{name:'Tailwind CSS'},{name:'Shadcn/ui'}
+      {name:"NextJs"},{name:"Tailwind CSS"},{name:"Shadcn/ui"}
     ],
-    image:'/thumb1.png',
-    live:'https://lemillion-notemanager-fp836ru75-tealspider23s-projects.vercel.app/',
+    image:"/thumb1.png",
+    live:"https://lemillion-notemanager-fp836ru75-tealspider23s-projects.vercel.app/",
     github:"https://github.com/Tealspider23/Lemillion-notemanager",
   },
   {
-    num:'02',
-    category:'Full Stack',
-    title:'project 2',
-    description:'Convoz. This is a video conferencing app built upon Stream services.',
+    num:"02",
+    category:"Full Stack",
+    title:"project 2",
+    description:"Convoz. This is a video conferencing app built upon Stream services.",
     stack:[
-      {name:'NextJs'},{name:'Stream'},{name:'TailwindCSS'}
+      {name:"NextJs"},{name:"Stream"},{name:"TailwindCSS"}
     ],
-    image:'/thumb2.png',
-    live:'https://convoz-video-conference-m5d5.vercel.app/sign-in?redirect_url=https%3A%2F%2Fconvoz-video-conference-m5d5.vercel.app%2F',
+    image:"/thumb2.png",
+    live:"https://convoz-video-conference-m5d5.vercel.app/sign-in?redirect_url=https%3A%2F%2Fconvoz-video-conference-m5d5.vercel.app%2F",
     github:"https://github.com/Tealspider23/Convoz_Video_Conference",
   },
   {
-    num:'03',
-    category:'AI and Machine Learning',
-    title:'project 3',
-    description:'InsightMaster.This is an AI leveraged Streamlit App that provides insights from Classification Datasets .',
+    num:"03",
+    category:"AI and Machine Learning",
+    title:"project 3",
+    description:"InsightMaster.This is an AI leveraged Streamlit App that provides insights from Classification Datasets .",
     stack:[
-      {name:'Streamlit'},{name:'Gemini'},{name:'Python Libraries'}
+      {name:"Streamlit"},{name:"Gemini"},{name:"Python Libraries"}
     ],
-    image:'/thumb3.png',
-    live:'https://insightmasters.streamlit.app/',
+    image:"/thumb3.png",
+    live:"https://insightmasters.streamlit.app/",
     github:"https://github.com/tejas122125/intel",
   },
   {
-    num:'04',
-    category:'Machine Learning and Web Development',
-    title:'project 3',
-    description:'Simulation Rail-Safe Development Web App . This is currently under development',
+    num:"04",
+    category:"Machine Learning and Web Development",
+    title:"project 3",
+    description:"Simulation Rail-Safe Development Web App . This is currently under development",
     stack:[
-      {name:'NextJs'},{name:'Firebase'},{name:'Maps'}
+      {name:"NextJs"},{name:"Firebase"},{name:"Maps"}
     ],
-    image:'/thumb4.png',
-    live:'',
+    image:"/thumb4.png",
+    live:"",
     github:"https://github.com/Tealspider23/Realtime-RailSafety-Simulation-Alerts-Application/tree/main",
   },
 ]
@@ -78,7 +78,7 @@ const Workpage = () => {
   return (
     <motion.section
     initial={{opacity:0}}
-    animate={{opacity:1 ,transition:{ delay:2.4 , duration:0.4 ,ease:'easeIn'}}}
+    animate={{opacity:1 ,transition:{ delay:2.4 , duration:0.4 ,ease:"easeIn"}}}
     className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0 "
     >
       <div className="container mx-auto">

@@ -1,11 +1,11 @@
-'use client'
-import React, { useRef, useState, useEffect, useCallback } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { OrbitControls, useGLTF } from '@react-three/drei'
-import { Vector3 } from 'three'
+"use client"
+import React, { useRef, useState, useEffect, useCallback } from "react"
+import { Canvas, useFrame } from "@react-three/fiber"
+import { OrbitControls, useGLTF } from "@react-three/drei"
+import { Vector3 } from "three"
 
 function DogModel(props) {
-  const { scene } = useGLTF('/dog-baked.glb')
+  const { scene } = useGLTF("/dog-baked.glb")
   return <primitive object={scene} {...props} />
 }
 
@@ -30,11 +30,11 @@ const VoxelDog = () => {
   }, [])
 
   useEffect(() => {
-    window.addEventListener('resize', handleWindowResize, false)
-    window.addEventListener('scroll', handleScroll, false)
+    window.addEventListener("resize", handleWindowResize, false)
+    window.addEventListener("scroll", handleScroll, false)
     return () => {
-      window.removeEventListener('resize', handleWindowResize, false)
-      window.removeEventListener('scroll', handleScroll, false)
+      window.removeEventListener("resize", handleWindowResize, false)
+      window.removeEventListener("scroll", handleScroll, false)
     }
   }, [handleWindowResize, handleScroll])
 
@@ -42,13 +42,13 @@ const VoxelDog = () => {
     <div
       ref={refContainer}
       style={{
-        position: 'fixed',
+        position: "fixed",
         top: 0,
         left: 0,
-        width: '100%',
-        height: '100%',
-        zIndex: -1, // Ensure it's behind other content
-        pointerEvents: 'none', // Allow pointer events to pass through
+        width: "100%",
+        height: "100%",
+        zIndex: -1, // Ensure it"s behind other content
+        pointerEvents: "none", // Allow pointer events to pass through
       }}
     >
       <Canvas
@@ -57,7 +57,7 @@ const VoxelDog = () => {
           setRenderer(gl)
         }}
         camera={{ position: [0, 20, 40], fov: 50 }}
-        style={{ height: '100%', width: '100%' }}
+        style={{ height: "100%", width: "100%" }}
       >
         <ambientLight intensity={0.5} />
         <OrbitControls autoRotate enableZoom enablePan enableRotate />
