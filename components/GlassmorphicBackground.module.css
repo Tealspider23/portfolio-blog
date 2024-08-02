@@ -1,0 +1,11 @@
+/* styles/GlassmorphicBackground.module.css */
+.glassmorphic {
+  background-color: rgba(0, 0, 0, 0.15); /* Adjust opacity as needed */
+  border-radius: 12px; /* Adjust corner radius */
+  backdrop-filter: blur(10px); /* Adjust blur strength */
+  border: 1px solid rgba(0, 0, 0, 0.18); /* Adjust border color and opacity */
+  padding: 20px;
+  margin: 20px;
+}
+
+  

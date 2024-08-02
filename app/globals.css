@@ -1,0 +1,99 @@
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+
+  @layer base{
+    body{
+      @apply font-primary bg-primary text-white leading-loose;
+    }
+
+    .h1{
+      @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+    }
+    .h2{
+      @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+    }
+    .h3{
+      @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+    }
+
+    .text-outline{
+      -webkit-text-stroke: 1px #ffffff;
+    }
+  
+    .text-outline-hover{
+      -webkit-text-stroke: 1px #00ff99;
+    }
+  }
+
+  * {
+    cursor: none !important; /* Force hide system cursor */
+  }
+  
+  
+  body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor:none
+  }
+  
+  canvas {
+    display: block;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+:root {
+  --accent-color: #00ff99; /* Replace with your actual accent color */
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color); /* Replace with your accent color variable or hex code */
+    border-radius: 10px;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: darken(var(--accent-color), 10%); /* Darken on hover */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) transparent;
+}
+
+/* Optional: Apply to specific elements instead of globally */
+.scrollable-element {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) transparent;
+}
+
+
+.custom-cursor {
+  position: fixed;
+  width: 20px; /* Adjust size */
+  height: 20px; /* Adjust size */
+  border-radius: 50%;
+  border: 4px solid #00ff99; /* Bold ring with specified color */
+  background-color: transparent; /* Transparent background */
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Ensure it doesn't capture pointer events */
+  z-index: 9999; /* Ensure it's above other elements */
+  transition: width 0.2s, height 0.2s;
+}
+
+/* Style when clicking */
+.custom-cursor.clicking {
+  width: 15px; /* Shrink on click */
+  height: 15px; /* Shrink on click */
+}
