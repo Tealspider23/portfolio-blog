@@ -67,7 +67,7 @@ const HomePage = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl  ">Software Developer</span>
            <h1 className="h1">
-           Hello I"m <br />
+           Hello I'm <br />
             <span className="text-accent hover-target">Amit Kumar</span>
           </h1>
             <p className="max-w-[500px] mb-9 text-white/80 ">
