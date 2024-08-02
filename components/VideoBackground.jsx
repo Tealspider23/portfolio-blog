@@ -1,5 +1,5 @@
 // components/VideoBackground.js
-import React from "react"
+import React from "react";
 
 const VideoBackground = () => {
   return (
@@ -28,7 +28,7 @@ const VideoBackground = () => {
         Your browser does not support the video tag.
       </video>
     </div>
-  )
-}
+  );
+};
 
-export default VideoBackground
+export default VideoBackground;

@@ -24,7 +24,7 @@ const info = [
     icon: <FaMapMarkerAlt />,
     title: "Address",
     description: "Q/R - B/661 Nalconagar Angul-759145, Odisha, India",
-  }
+  },
 ];
 
 const Contactpage = () => {
@@ -33,7 +33,10 @@ const Contactpage = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      }}
       className="py-6"
     >
       <div className="container mx-auto">
@@ -43,8 +46,11 @@ const Contactpage = () => {
             {state.succeeded ? (
               <p className="text-white text-2xl">Thanks for your message!</p>
             ) : (
-              <form onSubmit={handleSubmit} className={`flex flex-col gap-6 p-10 ${styles.glassmorphic} rounded-xl`}>
-                <h3 className="text-4xl text-accent">Let's Work Together</h3>
+              <form
+                onSubmit={handleSubmit}
+                className={`flex flex-col gap-6 p-10 ${styles.glassmorphic} rounded-xl`}
+              >
+                <h3 className="text-4xl text-accent">Lets Work Together</h3>
                 <p className="text-white/60">Get in touch with me</p>
                 {/* Inputs */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -72,8 +78,8 @@ const Contactpage = () => {
                     className="bg-[#27272c] text-white"
                     required
                   />
-                  <ValidationError 
-                    prefix="Email" 
+                  <ValidationError
+                    prefix="Email"
                     field="email"
                     errors={state.errors}
                   />
@@ -92,12 +98,17 @@ const Contactpage = () => {
                   className="h-[200px] bg-[#27272c] text-white"
                   required
                 />
-                <ValidationError 
-                  prefix="Message" 
+                <ValidationError
+                  prefix="Message"
                   field="message"
                   errors={state.errors}
                 />
-                <Button type="submit" disabled={state.submitting} size="md" className="max-w-40">
+                <Button
+                  type="submit"
+                  disabled={state.submitting}
+                  size="md"
+                  className="max-w-40"
+                >
                   {state.submitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
