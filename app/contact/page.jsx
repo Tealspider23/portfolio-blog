@@ -44,7 +44,7 @@ const Contactpage = () => {
               <p className="text-white text-2xl">Thanks for your message!</p>
             ) : (
               <form onSubmit={handleSubmit} className={`flex flex-col gap-6 p-10 ${styles.glassmorphic} rounded-xl`}>
-                <h3 className="text-4xl text-accent">Let"s Work Together</h3>
+                <h3 className="text-4xl text-accent">Let's Work Together</h3>
                 <p className="text-white/60">Get in touch with me</p>
                 {/* Inputs */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
